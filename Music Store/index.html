@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicStream - Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="JavaScript" href="index.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                🎵 MusicStream
+            </div>
+            
+            <nav>
+                <a href="#" class="nav-item active">
+                    <i>🏠</i> Home
+                </a>
+                <a href="#" class="nav-item">
+                    <i>🔍</i> Search
+                </a>
+                <a href="#" class="nav-item">
+                    <i>📚</i> Your Library
+                </a>
+            </nav>
+
+            <div class="playlist-section">
+                <div class="section-title">Playlists</div>
+                <div class="playlist-item">Create Playlist</div>
+                <div class="playlist-item">Liked Songs</div>
+                <div class="playlist-item">My Playlist #1</div>
+                <div class="playlist-item">Chill Hits</div>
+                <div class="playlist-item">Workout Mix</div>
+                <div class="playlist-item">Road Trip Songs</div>
+                <div class="playlist-item">Study Music</div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="nav-buttons">
+                    <button class="nav-btn">←</button>
+                    <button class="nav-btn">→</button>
+                </div>
+                
+                <div class="search-bar">
+                    <div class="search-icon">🔍</div>
+                    <input type="text" class="search-input" placeholder="What do you want to listen to?">
+                </div>
+                
+                <div class="user-profile">
+                    <div class="profile-pic">U</div>
+                    <span>User</span>
+                </div>
+            </div>
+
+            <div class="greeting">Good evening</div>
+
+            <div class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title-main">Recently played</h2>
+                    <a href="#" class="show-all">Show all</a>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-image playlist-cover">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="card-title">Today's Top Hits</div>
+                        <div class="card-subtitle">The most played songs right now</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image album-cover">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="card-title">Midnight Memories</div>
+                        <div class="card-subtitle">Album • Various Artists</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image artist-cover">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="card-title">Chill Vibes</div>
+                        <div class="card-subtitle">Perfect for relaxing</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image playlist-cover">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="card-title">Workout Hits</div>
+                        <div class="card-subtitle">Get pumped with these tracks</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image album-cover">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="card-title">Indie Pop Mix</div>
+                        <div class="card-subtitle">Discover new indie favorites</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image artist-cover">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="card-title">Electronic Dreams</div>
+                        <div class="card-subtitle">Electronic • 2 hr 30 min</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title-main">Made for you</h2>
+                    <a href="#" class="show-all">Show all</a>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-image playlist-cover">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="card-title">Discover Weekly</div>
+                        <div class="card-subtitle">Your weekly mixtape of fresh music</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image album-cover">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="card-title">Release Radar</div>
+                        <div class="card-subtitle">Catch all the latest music</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image artist-cover">
+                            <button class="play-button">▶</button>
+                        </div>
+                        <div class="card-title">Daily Mix 1</div>
+                        <div class="card-subtitle">Pop, Electronic and more</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player -->
+        <div class="player">
+            <div class="player-left">
+                <div class="current-track-image"></div>
+                <div class="current-track-info">
+                    <div class="current-track-title">Blinding Lights</div>
+                    <div class="current-track-artist">The Weeknd</div>
+                </div>
+                <button class="control-btn">♡</button>
+                <button class="control-btn">📱</button>
+            </div>
+
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button class="control-btn">🔀</button>
+                    <button class="control-btn">⏮</button>
+                    <button class="control-btn play-btn">▶</button>
+                    <button class="control-btn">⏭</button>
+                    <button class="control-btn">🔁</button>
+                </div>
+                <div class="progress-container">
+                    <span class="time">1:25</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="time">3:42</span>
+                </div>
+            </div>
+
+            <div class="player-right">
+                <button class="control-btn">🎤</button>
+                <button class="control-btn">📋</button>
+                <button class="control-btn">💻</button>
+                <div class="volume-container">
+                    <button class="control-btn">🔊</button>
+                    <div class="volume-bar">
+                        <div class="volume-fill"></div>
+                    </div>
+                </div>
+                <button class="control-btn">⛶</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
