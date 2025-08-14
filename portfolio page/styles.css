@@ -8,14 +8,15 @@
 body{
     width: 100vw;
     background-color: #111111;
+    color:aliceblue;
 }
 
 header{
     width:100%;
-    height: 5vh;
+    height: 50vh;
     background-color: aliceblue;
     color:#111111;
-    position: fixed;
+    position: relative;
     z-index: 100;
 }
 
@@ -26,8 +27,7 @@ header{
 }
 
 .lighter{
-    font-family: 'bodoni', serif;
-    font-size: 1.25rem;
+    font-family: 'Bradley Hand ITC', cursive;
     transform: none;
 }
 
@@ -70,7 +70,7 @@ line-height: 2vh;
 }
 
 a[class="nav-link"]:last-of-type{
-padding-right: 5vw;
+margin-right: 5vw;
 }
 
 .nav-link:hover{
@@ -84,6 +84,7 @@ padding-right: 5vw;
 header{
     background-color: #111111;
     color: aliceblue;
+    height: 6vh;
     border-bottom: 1px solid aliceblue;
 }
 
@@ -126,14 +127,50 @@ header{
 
 }
 
-@media (min-width:451px) {
-
-
+@media (min-width:451px){
+    header{
+        display: flex;
+        flex-direction: column;
+        background-image: url();
+    }
 }
 
+
 @media (min-width:451px) and (max-width:915px) {
+ .logo{
+        font-size: 15vw;
+        text-align: center;
+        padding: auto;
+        margin: auto;
+    }
+    .nav-list li{
+        font-size: 1rem;
+    }
 }
 
 @media (min-width:916px) {
-    
+ .logo{
+        font-size: 15vw;
+        text-align: center;
+        padding: auto;
+        margin: auto;
+        
+    }
+.nav-bar{
+    position: absolute;
+    right: 0.5vw;
+    top: 43vh;
+    z-index: 100;
+}
+.nav-list li{
+    font-size: 1.5rem;
+}
+a[class="nav-link"]:last-of-type{
+margin-right: 2.5vw;
+}
+
+.nav-link:hover{
+    background-color: #111111;
+    height: 10vh;
+}
 }
