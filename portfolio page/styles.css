@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+}
+
+body{
+    width: 100vw;
+    background-color: #111111;
+    color:aliceblue;
+}
+
+header{
+    width:100%;
+    height: 50vh;
+    background-color: aliceblue;
+    color:#111111;
+    position: relative;
+    z-index: 100;
+}
+
+.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2vh;
+    line-height: 5vh;
+}
+
+.lighter{
+    font-family: 'Bradley Hand ITC', cursive;
+    transform: none;
+}
+
+.nav-bar{
+    float: right;
+    height: 5vh;
+    padding-right:2vw;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+float: right;
+cursor: pointer;
+font-weight: bold;
+display: none;
+padding: 2vh 3vw;
+line-height: 2vh;
+}
+
+.nav-list{
+    float:right;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list li{
+    list-style: none;
+    display: inline-block;
+    font-size: 0.75rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-family: Helvetica;
+    color: #111111;
+    padding: 1.5vh 2%;
+}
+
+a[class="nav-link"]:last-of-type{
+margin-right: 5vw;
+}
+
+.nav-link:hover{
+    background-color: #111111;
+    color: aliceblue;
+    font-weight: bold;
+    height: 5vh;
+}
+
+@media (max-width:450px) {
+header{
+    background-color: #111111;
+    color: aliceblue;
+    height: 6vh;
+    border-bottom: 1px solid aliceblue;
+}
+
+    .checkbtn{
+        display: block;
+    }
+
+    .nav-list{
+        position: fixed;
+        display: block;
+        width: 30vw;
+        height: 30vh;
+        padding-top: 8vh;
+        right: -100%;
+        background-color:#4dbeff;
+        text-align: center;
+        z-index: -100;
+        transition: 0.5s;
+    }
+    #check:checked ~ .nav-bar>ul{
+        right: 0;
+    }
+    #check:checked ~ .checkbtn{
+        padding-right: 9vw;
+    }
+
+    .nav-list li{
+        line-height: 5vh;
+        width: 100%;
+    }
+
+    .nav-link{
+        border-bottom: 1px solid #111111;
+        color:aliceblue;
+    }
+
+    a[class="nav-link"]:last-of-type{
+        border-bottom: 0;
+    }
+
+}
+
+@media (min-width:451px){
+    header{
+        display: flex;
+        flex-direction: column;
+        background-image: url();
+    }
+}
+
+
+@media (min-width:451px) and (max-width:915px) {
+ .logo{
+        font-size: 15vw;
+        text-align: center;
+        padding: auto;
+        margin: auto;
+    }
+    .nav-list li{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:916px) {
+ .logo{
+        font-size: 15vw;
+        text-align: center;
+        padding: auto;
+        margin: auto;
+        
+    }
+.nav-bar{
+    position: absolute;
+    right: 0.5vw;
+    top: 43vh;
+    z-index: 100;
+}
+.nav-list li{
+    font-size: 1.5rem;
+}
+a[class="nav-link"]:last-of-type{
+margin-right: 2.5vw;
+}
+
+.nav-link:hover{
+    background-color: #111111;
+    height: 10vh;
+}
+}

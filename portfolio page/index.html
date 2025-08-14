@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <label class="logo">LIGHT<span class="lighter">Dzyn</span></label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">menu</label>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <a href="#about" class="nav-link"><li>ABOUT</li></a>
+                <a href="#projects" class="nav-link"><li>WORKS</li></a>
+                <a href="#contact" class="nav-link"><li>CONTACT</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a web developer with a passion for creating beautiful and functional websites.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project One</h3>
+            <p>Description of project one.</p>
+        </div>
+        <div class="project">
+            <h3>Project Two</h3>
+            <p>Description of project two.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>   
+</body>
+</html>
