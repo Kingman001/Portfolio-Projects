@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EduLearn - Educational Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>EduLearn</h1>
+        <p>Your Gateway to Interactive Learning</p>
+    </header>
+    <nav>
+        <a href="#video">Video Lesson</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+    <div class="container">
+        <section class="video-section" id="video">
+            <h2>Video Lesson: Introduction to HTML</h2>
+            <video controls width="100%" poster="https://via.placeholder.com/900x400?text=Video+Thumbnail">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Learn the basics of HTML and how to structure web pages.</p>
+        </section>
+        <section class="quiz-section" id="quiz">
+            <h2>Quiz: Test Your HTML Knowledge</h2>
+            <form id="quizForm">
+                <div>
+                    <p class="quiz-question">1. What does HTML stand for?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label>
+                        <label><input type="radio" name="q1" value="b"> Home Tool Markup Language</label>
+                        <label><input type="radio" name="q1" value="c"> Hyperlinks and Text Markup Language</label>
+                    </div>
+                </div>
+                <div>
+                    <p class="quiz-question">2. Which HTML tag is used to display a video?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q2" value="a"> &lt;media&gt;</label>
+                        <label><input type="radio" name="q2" value="b"> &lt;video&gt;</label>
+                        <label><input type="radio" name="q2" value="c"> &lt;movie&gt;</label>
+                    </div>
+                </div>
+                <button type="submit">Submit Quiz</button>
+            </form>
+            <div class="quiz-result" id="quizResult"></div>
+        </section>
+    </div>
+</body>
+</html>
