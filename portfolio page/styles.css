@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+    font-size: 2.5vw;
+}
+
+body{
+    width: 100vw;
+    background-color: #111111;
+}
+
+header{
+    width:100%;
+    height: 5vh;
+    background-color: aliceblue;
+    color:#171717;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2vh;
+    line-height: 5vh;
+}
+
+.lighter{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    transform: none;
+}
+
+.nav-bar{
+    float: right;
+    height: 5vh;
+    padding-right:2vw;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+float: right;
+cursor: pointer;
+font-weight: bold;
+display: none;
+padding: 2vh 3vw;
+line-height: 2vh;
+}
+
+.nav-list{
+    float:right;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list li{
+    list-style: none;
+    display: inline-block;
+    font-size: 0.75rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-family: Helvetica;
+    color: #171717;
+    padding: 1.5vh 2%;
+}
+
+a[class="nav-link"]:last-of-type{
+padding-right: 5vw;
+}
+
+.nav-link:hover{
+    background-color: #171717;
+    color: aliceblue;
+    font-weight: bold;
+    height: 5vh;
+}
+
+@media (max-width:450px) {
+header{
+    background-color: #111111;
+    color: aliceblue;
+    border-bottom: 1px solid aliceblue;
+}
+
+    .checkbtn{
+        display: block;
+    }
+
+    .nav-list{
+        position: fixed;
+        display: block;
+        width: 30vw;
+        height: 30vh;
+        padding-top: 8vh;
+        right: -100%;
+        background-color:#4dbeff;
+        text-align: center;
+        z-index: -100;
+        transition: 0.5s;
+    }
+    #check:checked ~ .nav-bar>ul{
+        right: 0;
+    }
+    #check:checked ~ .checkbtn{
+        padding-right: 9vw;
+    }
+
+    .nav-list li{
+        line-height: 5vh;
+        width: 100%;
+    }
+
+    .nav-link{
+        border-bottom: 1px solid #171717;
+        color:aliceblue;
+    }
+
+    a[class="nav-link"]:last-of-type{
+        border-bottom: 0;
+    }
+    .lighter{
+        display: none;
+    }
+
+}
+
+@media (min-width:451px) {
+
+
+}
+
+@media (min-width:451px) and (max-width:915px) {
+}
+
+@media (min-width:916px) {
+    
+}
