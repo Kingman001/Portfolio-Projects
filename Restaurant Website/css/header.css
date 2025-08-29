@@ -1,0 +1,62 @@
+header{
+  height: 190px;
+  width: 100vw;
+  background-color:#11122b;
+  color:#cbcbcb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+header > .contact-hour-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+header > .contact-hour-wrapper > .icon{
+  margin-right: 5px;
+  align-self: center;
+  padding: 0;
+}
+header > .contact-hour-wrapper > .icon i{
+  font-size:2em;
+}
+header > .contact-hour-wrapper > .contact-hour-div{
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: left;
+}
+header > .contact-hour-wrapper > .contact-hour-div > .phone{
+  font-size:1em;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  color:#cbcbcb;
+}
+header > .contact-hour-wrapper > .contact-hour-div > .hours{
+  font-size: 0.9rem;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 1.5px;
+  color: #858585;
+  padding-top: 5px;
+}
+
+
+
+/*Center Div*/
+.center-section{
+  display: grid; 
+grid-template-columns: 1fr;
+background-color: white;
+}
+header > .center-section > .logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header > .center-section > .logo {
+  font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
