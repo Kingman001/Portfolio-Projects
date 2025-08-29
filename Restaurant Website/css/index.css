@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+}
+header{
+  height: 190px;
+  width: 100vw;
+  background-color:#11122b;
+  color:#cbcbcb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.contact-hour-wrapper{
+  display: flex;
+  align-items: center;
+}
+.icon{
+  margin-right: 10px;
+}
+.icon i{
+  font-size:2rem;
+}
+.contact-hour-div{
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
