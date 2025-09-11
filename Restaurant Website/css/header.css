@@ -1,0 +1,100 @@
+header{
+  height: 190px;
+  width: 100vw;
+  background-color:#11122b;
+  color:#cbcbcb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+header > .contact-hour-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  width: 25vw;
+}
+header > .contact-hour-wrapper > .icon{
+  margin-right: 5px;
+  align-self: center;
+  padding: 0;
+}
+header > .contact-hour-wrapper > .icon i{
+  font-size:2em;
+}
+header > .contact-hour-wrapper > .contact-hour-div{
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  justify-content: center;
+  width: 20vw;
+}
+header > .contact-hour-wrapper > .contact-hour-div > .phone{
+  font-size:1em;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  color:#cbcbcb;
+}
+header > .contact-hour-wrapper > .contact-hour-div > .hours{
+  font-size: 0.9rem;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 1.5px;
+  color: #858585;
+  padding-top: 5px;
+}
+
+
+
+/*Center Div*/
+.center-column{
+display: flex; 
+flex-direction: column;
+align-items: center;
+margin-top: -1rem;
+width: 40%;
+}
+header > .center-column > .logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+header > .center-column > .logo :first-child{
+  font-family: "Asimovian", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+header > .center-column > .logo :nth-child(2){
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-style: normal;
+  text-decoration: underline;
+  margin-left: -2px;
+}
+
+
+
+/*Right Column*/
+header > .right-column{
+  width: 25vw;
+  margin-right:0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+header > .right-column > .address-div{
+  text-align: right; 
+  margin-right: 5px;
+}
+header > .right-column a{
+  text-decoration: none; 
+  color: #cbcbcb;
+}
+header > .right-column  > .icon{
+  font-size: 2em;
+}
+header > .right-column a:hover{
+  color: #cea135;
+}
