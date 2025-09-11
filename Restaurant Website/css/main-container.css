@@ -1,0 +1,18 @@
+.main-container{
+  display: flex;
+  justify-content: center;
+}
+.main-container > .main-content{
+  width: 75vw;
+}
+.main-container > .main-content > .main-content-img{
+  width: 350px;
+  margin: 23px 40px 20px 0;
+  float: left;
+}
+.main-container > .main-content > p{
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 1em;
+}
