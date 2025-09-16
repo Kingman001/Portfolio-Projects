@@ -1,8 +1,3 @@
-#main-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .squares-wrapper{
   display: flex;
   justify-content: center;
@@ -10,17 +5,17 @@
 
 .squares-wrapper > .squares{
   width: 75vw;
-  margin-top: -4px;
 }
 
 .squares-wrapper > .squares > .square{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: -4px;
 }
 
 .square > .square-img img{
   width: 100%;
-  height: 500px;
+  height: 350px;
   object-fit: cover;
 }
 
@@ -28,8 +23,14 @@
   display: flex;
   flex-direction: column;
   padding-top: 45px;
+  padding-left: 30px;
+  padding-right:30px;
 }
 
 .square > .square-text h1{
   color: #cea135;
+}
+
+.square > .square-text p{
+  margin-top: -15px;
 }

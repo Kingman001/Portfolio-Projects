@@ -11,7 +11,7 @@
   float: left;
 }
 .main-container > .main-content > p{
-  text-align: justify;
+  text-align: left;
   letter-spacing: 1px;
   line-height: 30px;
   font-size: 1em;

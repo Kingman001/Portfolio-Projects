@@ -1,0 +1,18 @@
+.spacer60{
+  height: 60px;
+  width: 75vw;
+}
+
+.anchor-link{
+  text-decoration: none;
+}
+
+.anchor-link h1:focus {
+  outline: none;
+}
+
+.anchor-link h1::after{
+  font-family: "Font Awesome 5 Free";
+  content: " \f0c1";
+  font-weight: 900;
+}
