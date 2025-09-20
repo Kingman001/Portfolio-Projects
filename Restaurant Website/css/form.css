@@ -45,24 +45,39 @@
   padding: 0.5rem 1.5rem;
   visibility: hidden;
   opacity: 0;
+  transition: all 0.3s;
 }
-.form input:focus + label{
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(1rem);
+
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder{
+  color: #11122b;
 }
-.form textarea:focus + label{
+.form input:focus::-webkit-input-placeholder, .form textarea:focus::-webkit-input-placeholder{
+  color: transparent;
+}
+
+
+.form input:focus + label, .form textarea:focus + label{
   opacity: 1;
   visibility: visible;
   transform: translateY(1rem);
 }
 
-
+.centered-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn{
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: inherit;
   color: #11122b;
   background-color: #cea135;
   border: 1px solid #cea135;
   border-radius: 2px;
+  padding: 10px 30px;
+  outline: none;
+  transition: all 0.3s;
+}
+.btn:active{
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.4);
 }
