@@ -1,0 +1,9 @@
+@media (max-width:615){
+    body{
+        width: 100vw;
+    }
+    .header-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
