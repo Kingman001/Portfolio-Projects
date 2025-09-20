@@ -1,9 +1,63 @@
-@media (max-width:615){
-    body{
-        width: 100vw;
-    }
+@media (max-width:615px){
     .header-wrapper{
+        display: block;
+        position: fixed;
+        height: 100px;
+    }
+    .contact-hour-wrapper, .right-column{
+        visibility: hidden;
+    }
+
+    .center-column{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: -7.5rem;
+    }
+
+    .nav-div > .menu-icon{
+        visibility: visible;
+        color: #cbcbcb;
+        z-index: 100;
+        font-size: 2rem;
+        margin-right: -6rem;
+        margin-top: 3rem;
+    }
+
+    .nav-div > .nav-bar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 35vh;
+        width: 100vw;
+        background-color: #11122b;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateY(0%);
+        transition: transform 0.25s ease-in-out;
+        visibility: hidden;
+        z-index: 1;
     }
+    .nav-div > .nav-bar > .nav-link{
+        width: 100%;
+        height: 3rem;
+        background-color: #1c1c35;
+        border: #141425 2px solid;
+        padding: 0.75rem;
+    }
+
+    .nav-div > #chkBox:checked ~ .nav-bar{
+        transform: translateY(42.75%);
+        visibility: visible;
+    }
+
+    header > .center-column > .logo{
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-left: -4rem;
+    }
+
 }
