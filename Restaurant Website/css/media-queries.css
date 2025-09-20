@@ -1,7 +1,6 @@
 @media (max-width:615px){
     .header-wrapper{
         display: block;
-        position: fixed;
         height: 100px;
     }
     .contact-hour-wrapper, .right-column{
