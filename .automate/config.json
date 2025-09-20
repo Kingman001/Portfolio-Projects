@@ -1,0 +1,10 @@
+{
+    "automate": {
+        "index.js": {
+            "taskId": 0,
+            "token": "xxx",
+            "username": "xxx",
+            "params": {}
+        }
+    }
+}
