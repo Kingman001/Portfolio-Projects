@@ -56,22 +56,7 @@ margin-top: -1rem;
 width: 40%;
 }
 header > .center-column > .logo{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font-size: 3rem;
-}
-header > .center-column > .logo :first-child{
-  font-family: "Asimovian", sans-serif;
-  font-weight: 600;
-  color: white;
-}
-header > .center-column > .logo :nth-child(2){
-  font-family: "Edu NSW ACT Cursive", cursive;
-  font-style: normal;
-  text-decoration: underline;
-  margin-left: -2px;
 }
 
 

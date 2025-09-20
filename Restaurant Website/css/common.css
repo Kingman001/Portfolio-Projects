@@ -6,3 +6,22 @@ body{
   padding: 0;
   width: 100vw;
 }
+
+/*logo*/
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo :first-child{
+  font-family: "Asimovian", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.logo :nth-child(2){
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-style: normal;
+  text-decoration: underline;
+  margin-left: -2px;
+}

@@ -1,0 +1,68 @@
+.form > .form-group{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 20px 0;
+}
+.form input{
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 3px solid #11122b;
+  display: block;
+  transition: all 0.3s;
+}
+.form input:focus{
+  outline: none;
+  border-bottom: 3px solid #cea135;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+}
+.form textarea{
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  padding: 1rem 1.5rem;
+  border: 3px solid #11122b;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+  transition: all 0.3s;
+}
+.form textarea:focus{
+  outline: none;
+  border: 3px solid #cea135;
+  box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.1);
+}
+
+.form label{
+  font-size: 1rem;
+  color: #cea135;
+  padding: 0.5rem 1.5rem;
+  visibility: hidden;
+  opacity: 0;
+}
+.form input:focus + label{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(1rem);
+}
+.form textarea:focus + label{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(1rem);
+}
+
+
+.btn{
+  font-size: 1rem;
+  font-family: inherit;
+  color: #11122b;
+  background-color: #cea135;
+  border: 1px solid #cea135;
+  border-radius: 2px;
+}
