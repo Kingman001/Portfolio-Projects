@@ -45,7 +45,6 @@ footer > .center-column > .nav-bar > a{
   text-align: center;
   transition: 0.5s;
   position: relative;
-  
 }
 footer > .center-column > .nav-bar > a:hover{
   letter-spacing: 1.2px;

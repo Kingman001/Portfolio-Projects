@@ -38,7 +38,8 @@
         transform: translateY(0%);
         transition: transform 0.25s ease-in-out;
         visibility: hidden;
-        z-index: 1;
+        z-index: 100;
+        margin-bottom: 30vh;
     }
     .nav-div > .nav-bar > .nav-link{
         width: 100%;
@@ -49,7 +50,7 @@
     }
 
     .nav-div > #chkBox:checked ~ .nav-bar{
-        transform: translateY(42.75%);
+        transform: translateY(40%);
         visibility: visible;
     }
 
@@ -59,4 +60,64 @@
         margin-left: -4rem;
     }
 
+/*hero section*/
+.hero-section > h1{
+width: 60vw;
+margin-top: 10vw;
+margin-left: 10vw;
+padding-left: 2rem;
+font-size: 2rem;
+}
+.hero-section > h3{
+  width: 45vw;
+  margin-left: 10vw;
+}
+
+
+/*features section*/
+.features-section{
+height: 800px;
+}
+.features-section > .columns-div{
+width: 100%;
+height: 700px;
+display: flex;
+flex-direction: column;
+}
+.features-section > .columns-div > .column{
+width: 250px;
+}
+
+
+/*footer section*/
+footer{
+height: 500px;
+padding-top: 15%;
+}
+footer > .center-column{
+width: 80%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+footer > .center-column > .contact-hour-div{
+    flex-direction: column;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+footer > .center-column > .nav-bar{
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+height: 120px;
+margin-bottom: 20px;
+}
+
+.skewed-header{
+height: 150px;
+}
+.skewed-header > .header-image{
+  transform: skewY(0deg);
+}
 }

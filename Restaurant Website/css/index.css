@@ -1,5 +1,6 @@
 /*Hero Section*/
 .hero-section{
+  width: 100vw;
   background-image: url("../images/fries image.jpg");
   height:650px;
   background-size: cover;
@@ -37,11 +38,11 @@
 
 /*Features Section*/
 .features-section{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/fries images.jpeg");
-  background-size: coer;
+  background-image: url("../images/fries images.jpg");
   background-repeat: repeat;
   background-color: #cea135;
   height: 400px;
