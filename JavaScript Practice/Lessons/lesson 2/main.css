@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #11122b;
+}
+
+form{
+    width: 25vw;
+    height: 80vh;
+    background-color: aliceblue;
+    border: 2px solid #11122b;
+    padding: 3rem;
+}
+#display{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 0.5rem;
+    border: 1px solid #11122b;
+}
+
+.calc-btns-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.calc-ops-btns-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.num-btn{
+    height: 3.5rem;
+}
+.ops-btn{
+    height: 2rem;
+    background-color: #11122b;
+    color: aliceblue;
+    font-weight: bold;
+}
+.equal-btn{
+    width: 8.5rem;
+    background-color: rgb(116, 245, 116);
+    color: #11122b;
+    font-weight: bold;
+}
+.function-btns{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.func-btn{
+    width: 3rem;
+    background-color: rgb(245, 116, 116);
+    color: #11122b;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.func-btn:hover, .equal-btn:hover, .ops-btn:hover, .num-btn:hover, .num-btn-zero:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.func-btn:active, .equal-btn:active, .ops-btn:active, .num-btn:active, .num-btn-zero:active{
+    transform: scale(0.98);
+}
+@media (max-width: 768px) {
+    form{
+        width: 80vw;
+        height: auto;
+    }
+}
