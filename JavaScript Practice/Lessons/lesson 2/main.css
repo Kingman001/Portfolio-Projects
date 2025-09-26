@@ -25,6 +25,7 @@ form{
     text-align: right;
     padding: 0.5rem;
     border: 1px solid #11122b;
+    border-radius: 3px;
 }
 
 .calc-btns-grid{
@@ -36,23 +37,26 @@ form{
 .calc-ops-btns-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 0.5rem;
     margin-bottom: 1rem;
 }
 .num-btn{
     height: 3.5rem;
+    border-radius: 3px;
 }
-.ops-btn{
+.ops-btn, .decimal-btn{
     height: 2rem;
     background-color: #11122b;
     color: aliceblue;
     font-weight: bold;
+    border-radius: 3px;
 }
 .equal-btn{
-    width: 8.5rem;
+    width: 6rem;
     background-color: rgb(116, 245, 116);
     color: #11122b;
     font-weight: bold;
+    border-radius: 3px;
 }
 .function-btns{
     display: flex;
@@ -64,6 +68,7 @@ form{
     color: #11122b;
     font-weight: bold;
     margin-right: 1rem;
+    border-radius: 3px;
 }
 .func-btn:hover, .equal-btn:hover, .ops-btn:hover, .num-btn:hover, .num-btn-zero:hover{
     cursor: pointer;
