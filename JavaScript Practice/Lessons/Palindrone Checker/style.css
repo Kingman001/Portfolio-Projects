@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+
+    /*declaring color variables*/
     --textColor: #14af3b;
     --btnColor: #6c63ff;
     --appBackground: #9f98fc;
