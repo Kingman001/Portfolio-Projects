@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Alert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .email-header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eeeeee;
+        }
+
+        .email-header h1 {
+            font-size: 24px;
+            color: #2c3e50;
+        }
+
+        .email-body {
+            padding: 20px;
+        }
+
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .email-body .alert {
+            background-color: #eafaf1;
+            border-left: 4px solid #1abc9c;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .email-footer {
+            font-size: 14px;
+            color: #7f8c8d;
+            text-align: center;
+            margin-top: 20px;
+            border-top: 2px solid #eeeeee;
+            padding-top: 10px;
+        }
+
+        .footer-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>Login Alert</h1>
+        </div>
+
+        <div class="email-body">
+            <p>Dear {{name}},</p>
+            <p>We noticed a login to your account from a new device. If this was you, you can disregard this message. If you didn’t log in, please take immediate action to secure your account.</p>
+
+            <div class="alert">
+                <strong>Details of the login attempt:</strong><br>
+                Device: {{device}}<br>
+                Location: {{location}}<br>
+                Time: {{time}}
+            </div>
+
+            <p>If you suspect unauthorized access, please change your password immediately. You can do so by clicking the button below:</p>
+            <a href="https://admin.gleanagrong.com/forgot-password" class="cta-button">Reset Password</a>
+        </div>
+
+        <div class="email-footer">
+            <p>If you have any questions, feel free to contact our support team at <a href="mailto:support@an-nur-info-tech.com" class="footer-link">support@an-nur-info-tech.com</a>.</p>
+            <p>Thank you!</p>
+            <p>&copy; {{year}} Glean Agro.</p>
+        </div>
+    </div>
+</body>
+</html> 
