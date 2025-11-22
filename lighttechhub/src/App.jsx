@@ -9,7 +9,8 @@ function App() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white shadow-md z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-blue-600">JoshCreates</h1>
+          <img src="assets/pics/light tech hub logo.webp" alt="Light Tech Hub Logo" className="h-10 w-10 mr-2"/>
+          <h1 className="text-2xl font-bold text-blue-600">LIGHT TECH HUB</h1>
           <div className="hidden md:flex gap-8">
             <a href="#home" className="hover:text-blue-600 transition">Home</a>
             <a href="#services" className="hover:text-blue-600 transition">Services</a>
