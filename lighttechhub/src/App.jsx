@@ -37,13 +37,12 @@ function App() {
       <section id="home" className="pt-20 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 text-center md:text-left">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">
-              Hi, I’m Joshua Audu<br />
-              <span className="text-blue-600">Digital Skills Trainer & Web Designer</span>
-            </h2>
-            <p className="text-xl text-gray-700 mb-8">
-              I build high-converting websites for businesses and train the next generation of UI/UX designers in Nigeria.
-            </p>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+  Professional Web Designer & Digital Skills Trainer in Abuja
+</h1>
+            <h2 className="text-4xl font-bold text-center mb-12">
+  Best Web Designer in Abuja | UI/UX Training & Bootcamps
+</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a href="#contact" className="btn-primary">Hire Me for Web Design</a>
               <a href="#bootcamp" className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition font-semibold">
@@ -117,9 +116,29 @@ function App() {
             <div><Phone className="mx-auto mb-2" size={32} /> +234 812 345 6789</div>
             <div><MapPin className="mx-auto mb-2" size={32} /> Abuja, Nigeria</div>
           </div>
+          <div className="text-center mb-8">
+  <h3 className="text-2xl font-bold">Serving Clients Across Nigeria</h3>
+  <p>Abuja | Lagos | Port Harcourt | Enugu | Kano | Ibadan</p>
+</div>
           <a href="mailto:joshuaaudu@email.com" className="btn-primary">Send Me a Message</a>
         </div>
       </section>
+
+      <section className="py-20 bg-gray-50">
+  <div className="max-w-4xl mx-auto px-6">
+    <h2 className="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+    <div className="space-y-8">
+      <div>
+        <h3 className="text-2xl font-semibold">How much does a website cost in Abuja?</h3>
+        <p>My websites start from ₦450,000 for professional, fast-loading sites.</p>
+      </div>
+      <div>
+        <h3 className="text-2xl font-semibold">Where can I learn UI/UX design in Abuja?</h3>
+        <p>Join my 4-weekend physical bootcamp – next batch January 2026.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 text-center">
