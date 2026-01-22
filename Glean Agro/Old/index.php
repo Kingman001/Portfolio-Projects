@@ -1,7 +1,7 @@
 <?php
 define('TITLE', '');
-require("./includes/head.php");
-include("./includes/navbar.php");
+require './includes/head.php';
+include './includes/navbar.php';
 ?>
 <!-- ===================== Main site section ===================== -->
 <main>
@@ -49,6 +49,16 @@ include("./includes/navbar.php");
             <div>
                 <h2 class="mb-1 mt-1">What we Do</h2>
                 <p class="text-justify l-height-2 font-larger">
+                    /* The text "At GleanAgro, we offer a comprehensive suite of services aimed at
+                    boosting the productivity and capacity of smallholder farmers, with a focus on
+                    delivering top-quality agricultural inputs, support services, grain bank, and
+                    access to financial resources and markets..." is describing the services
+                    provided by GleanAgro to support smallholder farmers. These services include
+                    providing high-quality agricultural inputs, support services, establishing a
+                    grain bank, and facilitating access to financial resources and markets. The goal
+                    is to enhance the productivity and capabilities of smallholder farmers,
+                    ultimately contributing to food security and poverty alleviation in the
+                    agricultural sector. */
                     At GleanAgro, we offer a comprehensive suite of services aimed at boosting the productivity and
                     capacity of smallholder farmers, with a focus on delivering top-quality <span class="italic bold">agricultural inputs</span>,
                     <span class="bold italic">support services</span>, <span class="bold italic">grain bank</span>, and access to <span class="bold italic">financial resources</span> and <span class="bold italic">markets</span>...
@@ -163,11 +173,13 @@ include("./includes/navbar.php");
         </div>
     </div>
 
-    <?php include("./includes/quiklinks.php"); ?>
+    <?php include './includes/quiklinks.php'; ?>
 </main>
 <!-- =========X============ /Main site section =========X============ -->
 
 <?php
-include("./includes/scripts.php");
-include("./includes/footer.php");
+include './includes/scripts.php';
+include './includes/footer.php';
+
+
 ?>
