@@ -1,0 +1,8 @@
+{
+  "name": "Light Designs Portfolio",
+  "description": "A premium IT startup portfolio for Light Designs, specializing in web development, graphic design, and digital training, featuring an AI-powered project consultant.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

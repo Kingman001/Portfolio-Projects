@@ -1,1 +1,12 @@
-{}
+{
+    "appModernization.javaUpgrade.enableQuickPick": true,
+    "github.copilot.chat.alternateGeminiModelFPrompt.enabled": true,
+    "github.copilot.chat.alternateGptPrompt.enabled": true,
+    "github.copilot.chat.anthropic.thinking.budgetTokens": 32000,
+    "github.copilot.chat.anthropic.tools.websearch.maxUses": 20,
+    "github.copilot.chat.anthropic.useMessagesApi": true,
+    "github.copilot.chat.codesearch.enabled": true,
+    "github.copilot.chat.completionsFetcher": "node-fetch",
+    "github.copilot.chat.generateTests.codeLens": true,
+    "github.copilot.chat.githubMcpServer.enabled": true
+}
