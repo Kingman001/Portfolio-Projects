@@ -1,0 +1,8 @@
+{
+  "name": "Glean Agro - Sustainable Future",
+  "description": "A modern, high-performance web application for Glean Agro, featuring AI-powered agricultural assistance, sustainable farming showcases, and interactive service management.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

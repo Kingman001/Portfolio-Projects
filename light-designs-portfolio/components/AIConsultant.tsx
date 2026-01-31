@@ -9,7 +9,6 @@ const AIConsultant: React.FC = () => {
     { role: 'model', text: "Hello! I'm your Light Designs AI Consultant. Tell me about a digital project you're dreaming of, and I'll help you sketch out a roadmap!" }
   ]);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -17,20 +16,13 @@ const AIConsultant: React.FC = () => {
 
     const userMessage = input;
     setInput('');
-    setError(null);
     setMessages(prev => [...prev, { role: 'user', text: userMessage }]);
     setIsLoading(true);
 
-    try {
-      const response = await generateProjectConsultation(userMessage);
-      setMessages(prev => [...prev, { role: 'model', text: response ?? 'I apologize, but I could not generate a response.' }]);
-    } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'An unexpected error occurred';
-      setError(errorMessage);
-      setMessages(prev => [...prev, { role: 'model', text: `Sorry, I encountered an error: ${errorMessage}` }]);
-    } finally {
-      setIsLoading(false);
-    }
+    const response = await generateProjectConsultation(userMessage);
+    
+    setMessages(prev => [...prev, { role: 'model', text: response }]);
+    setIsLoading(false);
   };
 
   return (
@@ -51,32 +43,17 @@ const AIConsultant: React.FC = () => {
         </div>
 
         <div className="bg-white rounded-3xl shadow-2xl shadow-blue-900/40 overflow-hidden flex flex-col h-[600px]">
-          {error && (
-            <div className="bg-red-50 border-b border-red-200 p-4 flex items-start gap-3">
-              <i className="fa-solid fa-exclamation-circle text-red-500 mt-1"></i>
-              <div className="flex-1">
-                <p className="text-red-800 font-semibold text-sm">Error</p>
-                <p className="text-red-700 text-sm">{error}</p>
-              </div>
-              <button
-                onClick={() => setError(null)}
-                className="text-red-500 hover:text-red-700 transition-colors"
-                title="Close error message"
-              >
-                <i className="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-          )}
           <div className="flex-1 overflow-y-auto p-6 space-y-6 bg-gray-50">
             {messages.map((msg, i) => (
-              <div
-                key={i}
+              <div 
+                key={i} 
                 className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'} animate-fade-in`}
               >
-                <div className={`max-w-[85%] p-4 rounded-2xl ${msg.role === 'user'
-                  ? 'bg-blue-600 text-white rounded-tr-none'
+                <div className={`max-w-[85%] p-4 rounded-2xl ${
+                  msg.role === 'user' 
+                  ? 'bg-blue-600 text-white rounded-tr-none' 
                   : 'bg-white text-gray-700 shadow-sm border border-gray-100 rounded-tl-none'
-                  }`}>
+                }`}>
                   <p className="text-sm md:text-base whitespace-pre-line">{msg.text}</p>
                 </div>
               </div>
@@ -93,18 +70,19 @@ const AIConsultant: React.FC = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="p-4 bg-white border-t border-gray-100 flex gap-4">
-            <input
-              type="text"
+            <input 
+              type="text" 
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="e.g., I want to build a fitness tracking app for seniors..."
               className="flex-1 bg-gray-100 border-none rounded-xl px-6 py-4 text-gray-700 focus:ring-2 focus:ring-blue-500 transition-all outline-none"
               disabled={isLoading}
             />
-            <button
+            <button 
               type="submit"
               disabled={isLoading || !input.trim()}
-              className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white p-4 rounded-xl shadow-lg transition-all" title="Send message"            >
+              className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white p-4 rounded-xl shadow-lg transition-all"
+            >
               <i className="fa-solid fa-paper-plane"></i>
             </button>
           </form>

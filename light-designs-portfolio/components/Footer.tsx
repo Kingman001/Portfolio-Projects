@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <img src="logo 2.webp" alt="LightDzyns Logo" className="w-100 h-20" />
+              <img src="logo 2.webp" alt="Logo" className="h-15 w-40" />
             </div>
             <p className="text-gray-400 leading-relaxed">
               Illuminating businesses through creative design and robust technical solutions. Your startup partner for the digital age.
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                 placeholder="Enter email"
                 className="bg-gray-800 border-none rounded-lg px-4 py-2 text-sm text-white w-full focus:ring-2 focus:ring-blue-600 outline-none"
               />
-              <button type="submit" title="Subscribe to newsletter" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
                 <i className="fa-solid fa-paper-plane"></i>
               </button>
             </form>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-10 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-6 text-gray-500 text-sm">
-          <p>© 2024 Light Designs. All rights reserved.</p>
+          <p>© 2026 LightDsyns. All rights reserved.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

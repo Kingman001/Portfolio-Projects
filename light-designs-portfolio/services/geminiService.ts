@@ -2,17 +2,13 @@
 import { GoogleGenAI } from "@google/genai";
 
 const getAIClient = () => {
-  const apiKey = process.env.GEMINI_API_KEY || '';
-  if (!apiKey) {
-    console.warn('GEMINI_API_KEY is not set');
-  }
-  return new GoogleGenAI({ apiKey });
+  return new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
 };
 
 export const generateProjectConsultation = async (prompt: string) => {
   const ai = getAIClient();
   const systemInstruction = `
-    You are the AI Assistant for LightDzyns, an IT startup. 
+    You are the AI Assistant for Light Designs, an IT startup. 
     You help potential clients brainstorm their projects. 
     Our services include:
     1. Web Development (Full-stack, eCommerce, Dashboards)
